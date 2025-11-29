@@ -1,8 +1,12 @@
+import "./Header.css"
+
 function Header() {
 
 return (
 
-<Header></Header>
+<header className="Header">
+<h1>Header</h1>    
+</header>
 
 );
 };

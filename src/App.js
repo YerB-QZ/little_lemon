@@ -1,21 +1,18 @@
 //import logo from './logo.svg';
 import './App.css';
-import Header from '.components/Header.js';
-import Nav from '.components/Nav.js';
-import Main from '.components/Main.js';
-import Footer from '.components/Footer.js';
+import Header from './components/Header.js';
+import Main from './components/Main.js';
+import Footer from './components/Footer.js';
+import Nav from './components/Nav.js';
 
-function App() {
+export default function App() {
   return (
-  <>
+  <div className="App">
 
-  <Header/>
   <Nav/>
   <Main/>
   <Footer/>
 
-  </>
+  </div>
   );
 }
-
-export default App;

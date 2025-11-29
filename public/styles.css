@@ -1,0 +1,18 @@
+body {
+margin: 0;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;   /* 3 columns */
+  grid-template-rows: auto 1fr auto;    /* header, main, footer */
+  grid-template-areas:
+    "header header header"
+    "main   main   main"
+    "footer footer footer";
+  min-height: 100vh;
+}
+
+.Header { grid-area: header; }
+.Main   { grid-area: main; }
+.Footer { grid-area: footer; }
