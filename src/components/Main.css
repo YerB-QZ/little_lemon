@@ -1,4 +1,46 @@
 .Main {
   background: #495e57;
-  padding: 2rem;
+
+}
+
+.homepage {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding: 2.5rem 1rem;
+    gap: 2rem;
+}
+
+.pageText h1 {
+    text-align: left; 
+    font-size: 50px;
+    font-family: "Display Serif", serif;
+    color: #F4CE14;
+    margin: 0;
+}
+
+.pageText h2{
+  margin: 0.25rem 0 1rem;
+  color: #fff;
+  text-align: left;
+}
+.pageText p {
+  color: #fff;
+  max-width: 28rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.homeImage{
+  display: flex;
+  justify-content: center;
+}
+
+.homeImage img{
+  width: 320px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
 }
