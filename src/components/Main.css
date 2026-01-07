@@ -44,3 +44,21 @@
   border-radius: 16px;
   object-fit: cover;
 }
+
+.pageText button {
+  background-color: #f4ce14;   
+  color: #000;                
+  border-radius: 30px;
+  width: 220px;
+  height: 60px;
+  border: none;               
+  font-weight: 600;
+  cursor: pointer;
+
+}
+
+.pageText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
