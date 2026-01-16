@@ -11,7 +11,7 @@ test('renders the booking form element rendered via booking page', () => {
     </MemoryRouter>
 );
 
-    const headingElement = screen.getByText(/this is booking page/i);
+    const headingElement = screen.getByText(/looking forward to welcome you!/i);
     expect(headingElement).toBeInTheDocument();
     const guestNumberElement = screen.getByText(/number of guest/i);
     expect(guestNumberElement).toBeInTheDocument();

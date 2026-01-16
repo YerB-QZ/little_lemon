@@ -1,5 +1,5 @@
 import BookingForm from "./BookingForm.js";
-import "./Nav.css"
+import "./BookingPage.css";
 import {useReducer} from "react";
 import { submitAPI } from "../api";
 import { initializeTimes, updateTimes } from "./bookingTimeLogic";
@@ -19,13 +19,15 @@ function BookingPage() {
     initializeTimes
     );
 function submitForm(formData) {
-submitAPI(formData) ? navigate("/confirmation") : null;
+if(submitAPI(formData)) {
+     navigate("/confirmation");
+}
 };
 
 return (
 
-<div className="homepage">
-<h1>This is booking page</h1>
+<div className="bookingPage">
+<h1>Looking forward to welcome you!</h1>
 <BookingForm availableTimes = {availableTimes} dispatcher = {dispatcher} submitForm = {submitForm}/>
 </div>
 

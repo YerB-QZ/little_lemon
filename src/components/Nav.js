@@ -1,17 +1,30 @@
 import "./Nav.css"
-import { NavLink, useLocation, Link } from "react-router-dom";
+import { NavLink} from "react-router-dom";
+import { ReactComponent as HomeIcon } from "../images/home icon.svg";
+import logo from "../images/Logo.svg";
+import hamburger_menu from "../images/icon _hamburger.svg";
+import basket from "../images/Basket.svg";
+
 
 function Nav() {
 
-    const {pathname} = useLocation();
+    /*const {pathname} = useLocation();*/
 
 return (
 
 <nav  className="nav">
-  {pathname === "/" && <NavLink to = "/booking" className ="nav-item"> Booking Page </NavLink>}
-  {pathname === "/booking" && <NavLink to="/" className = "nav-item"> Homepage </NavLink>}
-  {pathname === "/" && <NavLink to="/confirmation" className = "nav-item"> Confirmation </NavLink>}
-  {pathname === "/confirmation" && <NavLink to="/" className = "nav-item"> Hompage </NavLink>}
+  <div className="nav-left">
+  <img src = {hamburger_menu} className="menu-img" alt = "Hamburger menu"/> 
+  <NavLink to = "/" className ="nav-item">
+  <HomeIcon className="nav-icon"/>
+  <span>Home</span>
+  </NavLink>
+  </div>
+   <img src = {logo} className="logo-img" alt = "Logo Little Lemon R"/>  
+  <div className="nav-right">
+   <img src = {basket} className="basket-img" alt= "Basket Menu"/>
+  </div>
+ 
 </nav>
 
 );

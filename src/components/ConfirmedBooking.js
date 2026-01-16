@@ -1,3 +1,4 @@
+import "./BookingPage.css";
 export function ConfirmedBooking() {
 
 return (
